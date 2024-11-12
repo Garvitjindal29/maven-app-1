@@ -1,26 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.example</groupId>
-    <artifactId>my-app</artifactId>
+    <artifactId>your-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
-        <!-- Customizing the target directory -->
-        <directory>${project.basedir}/build-output</directory>
+        <!-- Set a custom directory for the output -->
+        <directory>${project.basedir}/custom-target</directory>
 
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <outputDirectory>${project.build.directory}/my-jar</outputDirectory>
-                </configuration>
-            </plugin>
-        </plugins>
+        <!-- Specify where to place compiled classes -->
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+
+        <!-- Specify where to place compiled test classes -->
+        <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
     </build>
 </project>
 
+      
