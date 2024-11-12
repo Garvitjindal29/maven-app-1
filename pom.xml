@@ -30,9 +30,10 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
-            <!-- Configuration options here -->
+            <version>3.3.2</version> <!-- Or a more recent version -->
         </plugin>
     </plugins>
 </build>
+
 
 </project>
